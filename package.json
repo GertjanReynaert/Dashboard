@@ -8,11 +8,12 @@
   "scripts": {
     "clean:install": "rm -rf node_modules && npm cache clean && npm install",
     "start": "NODE_ENV=development webpack-dev-server --hot --inline --progress --history-api-fallback --config webpack.config.js",
-    "eslint": "eslint ./src",
+    "eslint": "eslint .",
     "eslint:fix": "eslint -v && npm run eslint -- --fix"
   },
   "dependencies": {
     "aphrodite": "0.3.3",
+    "material-design-icons": "2.2.3",
     "react": "15.1.0",
     "react-addons-css-transition-group": "15.1.0",
     "react-dom": "15.1.0"

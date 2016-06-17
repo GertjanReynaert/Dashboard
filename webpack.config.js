@@ -8,7 +8,7 @@ module.exports = {
 
   entry: [
     'react-hot-loader/patch',
-    './src/index.js',
+    './index.js',
   ],
 
   resolve: {
@@ -23,7 +23,7 @@ module.exports = {
       __DEV__: env === 'development',
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
       filename: 'index.html',
     }),
   ],
