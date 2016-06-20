@@ -8,6 +8,9 @@ import LayoutContainer from 'components/Layout/LayoutContainer';
 import LayoutRow from 'components/Layout/LayoutRow';
 import LayoutColumn from 'components/Layout/LayoutColumn';
 
+import GridContainer from 'components/Grid/GridContainer';
+import GridCell from 'components/Grid/GridCell';
+
 class Application extends Component {
   constructor(props) {
     super(props);
@@ -73,7 +76,7 @@ class Application extends Component {
             </LayoutContainer>
           </Tab>
           <Tab tabName="office">
-            <GridContainer
+            {/*
               grid={```
                 @ $ # #
                 @ % # #
@@ -84,6 +87,8 @@ class Application extends Component {
                 % # # ^ * *
                 & & ~ ^ * *
               ```}
+              */}
+            <GridContainer
               grid={[
                 ['a', 'b', 'c', 'c'],
                 ['a', 'd', 'c', 'c'],
